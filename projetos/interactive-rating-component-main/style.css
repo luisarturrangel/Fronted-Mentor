@@ -110,8 +110,15 @@ h3 {
 }
 
 button {
+  font-size: var(--fs15);
   color: var(--color-neutral-white);
   font-weight: var(--fw700);
+}
+
+.hoverlb > label {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-mediumgrey);
+  cursor: pointer;
 }
 
 button:hover {
@@ -140,6 +147,14 @@ p {
 }
 
 /* utility */
+
+.textcenter {
+  text-align: center;
+}
+
+.textjf {
+  text-align: justify;
+}
 
 .fw400 {
     font-weight: var(--fw400);
@@ -177,7 +192,7 @@ p {
 
 .flexbox {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
 }
 
 .card {
@@ -207,9 +222,7 @@ p {
 }
 
 .rate {
-    height: 50px;
-    padding: 0 10px;
-    
+    padding: 0 10px;   
 }
 
 .rate:not(:checked) > input {
@@ -217,11 +230,17 @@ p {
     top:-9999px;
 }
 
+label > p {
+  text-align: center;
+  font-size: var(--fs15);
+  justify-content: center;
+}
+
 .rate > label {
-    padding: 25px;
-    align-items: center;
+    color: black;
+    padding: 20px;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    background-color: var(--color-neutral-mediumgrey);
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-neutral-lightgrey);
 }
