@@ -116,11 +116,6 @@ button {
   letter-spacing: 0.1em;
 }
 
-.hoverlb > label {
-  background-color: var(--color-neutral-white);
-  color: var(--color-neutral-mediumgrey);
-  cursor: pointer;
-}
 
 button:hover {
   background-color: var(--color-neutral-white);
@@ -145,6 +140,13 @@ p {
 
 .marginbt-15 {
   margin-bottom: 15px;
+}
+
+
+.justify {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 /* utility */
@@ -189,6 +191,10 @@ p {
   width: 300px;
 }
 
+.cordaora {
+  background-color: #353f49b0;
+}
+
 /* boxes */
 
 .flexbox {
@@ -207,12 +213,6 @@ p {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: #353f49b0;
-}
-
-div > svg {
-  display: flex;
-  align-content: center;
 }
 
 .round-border {
@@ -223,13 +223,35 @@ div > svg {
   border-radius: 20px;
 }
 
+.round-border2 {
+  border: none;
+  padding: 4px 10px;
+  display: inline-block;
+  margin: 2px 1px;
+  border-radius: 20px;
+}
+
 .background-panel {
   background-color: var(--color-neutral-darkblue);
 }
 
 .rate {
-    padding: 0 10px;   
+    padding: 0 10px;  
 }
+
+.hoverlb > label {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-mediumgrey);
+  cursor: pointer;
+}
+
+
+span > p {
+  text-align: center;
+  margin: auto;
+}
+
+
 
 .rate:not(:checked) > input {
     position:absolute;
@@ -244,11 +266,16 @@ label > p {
   justify-content: center;
 }
 
+.ratingbg:hover {
+  background-color: var(--color-neutral-lightgrey);
+  cursor: pointer;
+}
+
 .rate > label {
     color: hsla(0, 0%, 100%, 0.5);
     padding: 20px;
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background-color: #353f49b0;
+
 }
