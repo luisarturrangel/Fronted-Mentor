@@ -117,7 +117,7 @@ h3 {
   letter-spacing: 0.1em;
 }
 
-#submit > button:hover {
+button:hover {
   background-color: var(--color-neutral-white);
   color: var(--color-primary-orange);
   cursor: pointer;
@@ -161,7 +161,21 @@ p {
    justify-content: center;
 }
 
+.centerThisShit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* utility */
+
+
 
 .textcenter {
   text-align: center;
@@ -173,6 +187,10 @@ p {
 
 .fw400 {
     font-weight: var(--fw400);
+}
+
+.fs-15 {
+  font-size: var(--fs15);
 }
 
 .text-neutral-grey {
@@ -201,6 +219,10 @@ p {
 
 .width-300 {
   width: 300px;
+}
+
+.width-at {
+  width: 85%;
 }
 
 .cordaora {
@@ -265,8 +287,7 @@ p {
 .round-border2 {
   border: none;
   padding: 4px 10px;
-  display: inline-block;
-  margin: 2px 1px;
+  width: max-content;
   border-radius: 20px;
 }
 
