@@ -1,0 +1,207 @@
+@import url('https://fonts.google.com/specimen/Karla');
+
+:root {
+    --color-primary-Cyan: hsl(179, 62%, 43%);
+    --color-primary-Bright-Yellow: hsl(71, 73%, 54%);
+
+    --color-neutral-Light-gray: hsl(204, 43%, 93%);
+    --color-neutral-grayish-Blue: hsl(218, 22%, 67%);
+
+    --fonte: 'Karla', Arial, sans-serif;
+}
+
+/* box-sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*remove list style on ul, ol */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+/* A elements that don't have a class get defaut */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove all animations, transitions and smooth */
+@media (prefers-reduced-motion: reduce) {
+  htmo:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+    background-color: var(--color-neutral-Light-gray);
+    color: white;
+    font-family: var(--fonte);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+}
+
+/* utility */
+
+.paddingbt-15 {
+  padding-bottom: 15px;
+}
+
+.padding-20 {
+  padding: 35px;
+}
+
+.ftsz-20 {
+  font-size: 16px;
+}
+
+.ftsz-24 {
+  font-size: 24px;
+}
+
+.ftsz-30 {
+  font-size: 30px;
+}
+
+.ftsz-36 {
+    font-size: 36px;
+}
+
+.cltext-cyan {
+    color: var(--color-primary-Cyan);
+}
+
+.cltext-yl {
+    color: var(--color-primary-Bright-Yellow);
+}
+
+.cltext-blue {
+    color: var(--color-neutral-grayish-Blue);
+}
+
+.background-white {
+    background-color: white;
+}
+
+.background-cyan {
+    background-color: var(--color-primary-Cyan);
+}
+
+.background-blue {
+    background-color: hsla(179, 62%, 43%, 0.493);
+}
+
+.width-300 {
+  width: 200px;
+}
+
+.textcenter > p , h3 {
+  margin-left: 2rem;
+}
+
+/* composition */
+
+section > .maxwidth-50 {
+    max-width: 50%;
+}
+
+button {
+  background-color: var(--color-primary-Bright-Yellow);
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.541);
+}
+
+.gridbox {
+  display: grid;
+}
+
+.flexbox{
+  display: flex;
+}
+
+.inline {
+    display: flex;
+}
+
+.cor {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* boxes */
+
+.minwidth-25 {
+  min-width: 17.5rem;
+}
+
+.border1 {
+  border-radius: 0px 0px 0px 10px;
+}
+
+.border2 {
+  border-radius: 0px 0px 10px 0px;
+}
+
+.card {
+  max-width: 35rem;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  min-height: 100px;
+  box-shadow: 1px 1px 1px 1 black;
+}
